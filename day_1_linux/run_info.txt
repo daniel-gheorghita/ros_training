@@ -1,3 +1,12 @@
+Manual build:
 docker build -t ros_training_ubuntu .
 docker run -v /home/guest/ros_training:/ros_training -it ros_training_ubuntu bash
+
+Existing image:
+docker run -v /home/guest/ros_training:/ros_training -it ros:noetic bash
+(requires running source /opt/ros/noetic/setup.bash)
+
+Open in another terminal:
+docker container ls
+docker exec -it container_id bash
 
